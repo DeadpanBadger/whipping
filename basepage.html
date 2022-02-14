@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="Description" content="Webpage about Whips">
+	<meta name="Keywords" content="Soda, Pretzels, Whips">
+	<meta name="author" content="Connor Ringer">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>home</title>
+	<style>
+
+		.top-container {
+  			background-color: #f1f1f1;
+  			padding: 30px;
+  			text-align: center;
+			
+		}
+
+		.header {
+  			color: #f2f2f2;
+		}
+
+		.content {
+  			padding: 16px;
+		}
+
+		.sticky {
+  			position: fixed;
+  			top: 0;
+  			width: 100%;
+		}
+
+		.sticky + .content {
+  			padding-top: 102px;
+		}		
+		.smooth{
+			background: url("images/letstrythisone.png"): transparent;
+			width: 100%;
+		}
+		.background{
+			padding-top:10px;
+		}
+		.pages{
+			font-family:'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
+			font-size: 40px;
+			top: 37%;
+		}
+		.menu{
+			position: absolute;
+  			left: 32%;
+  			transform: translate(-50%, -50%);
+			color:#000000;
+		}
+		.ordering{
+			position: absolute;
+  			left: 41%;
+  			transform: translate(-50%, -50%);
+			color:#000000;
+		}
+		.jobs{
+			position: absolute;
+  			left: 49.5%;
+  			transform: translate(-50%, -50%);
+			color:#000000;
+		}
+		.about{
+			position: absolute;
+  			left: 58%;
+  			transform: translate(-50%, -50%);
+			color:#000000;
+		}
+		.fundraising{
+			position: absolute;
+  			left: 71%;
+  			transform: translate(-50%, -50%);
+			color:#000000;
+		}
+		.merchandise{
+			position: absolute;
+  			left: 84%;
+  			transform: translate(-50%, -50%);
+			color:#000000;
+		}
+		a:link {
+			color:#f2f2f2;
+			background-color: transparent;
+			text-decoration: none;
+		}
+		a:visited {
+  			color:#f2f2f2;
+  			background-color: transparent;				
+			text-decoration: none;
+		}
+		a:hover {
+			color:#000000;
+			background-color: transparent;				
+			text-decoration: none;				
+		}
+		a:active {
+	  		color:#f2f2f2;
+			background-color: transparent;
+	  		text-decoration: none;
+		}
+		
+		.parent {
+  			position: relative;
+  			top: 0;
+  			left: 0;
+		}
+		.image1 {
+  			position: relative;
+  			top: 0;
+  			left: 0;
+		}
+		.image2 {
+  			position: absolute;
+  			top: 5px;
+  			left: 30px;
+			width: 20%;
+		}
+		.hours{
+			align="center"
+		}
+	</style>
+	
+</head>
+
+<body>
+	<div class="header" id="myHeader">
+		<div class="parent">
+			<img class="smooth image1" src="images/letstrythisone.png" alt="swoosh">
+			<a href="file:///D:/webdev/whips/whips.html"><img class="image2" src="images/whips-logo-alt.webp" alt="logo"></a>
+			<div class="menu pages"><a href="">Menu</a></div>
+			<div class="ordering pages"><a href="">Order</a></div>
+			<div class="jobs pages"><a href="">Jobs</a></div>
+			<div class="about pages"><a href="">About</a></div>
+			<div class="fundraising pages"><a href="">Fundraising</a></div>
+			<div class="merchandise pages"><a href="">Merch</a></div>
+		</div>
+	</div>
+	
+
+	<script>
+			window.onscroll = function() {myFunction()};
+
+			var header = document.getElementById("myHeader");
+			var sticky = header.offsetTop;
+
+			function myFunction() {
+  		if (window.pageYOffset > sticky) {
+    		header.classList.add("sticky");
+		} else {
+    	header.classList.remove("sticky");
+  		}
+			}
+	</script>
+</body>
+</html>
